@@ -10,7 +10,7 @@ both `antelope` and `antelopes`.)
     antelope rocks out
     antelopes rock out
 
-   ## ```/antelopes?\srocks?\sout/g```
+   **```/antelopes?\srocks?\sout/g```**
 
 * Regex that matches either of:
 
@@ -21,7 +21,7 @@ both `antelope` and `antelopes`.)
 
     boat
 
-   ## ```/[gm]oat/g```
+   **```/[gm]oat/g```**
 
 * Regex that matches dates in YYYY-MM-DD format. (Year can be 1-4 digits, and
   month and day can each be 1-2 digits). This does not need to verify the date
@@ -32,7 +32,7 @@ both `antelope` and `antelopes`.)
   1999-01-20
   812-2-10
     
-   ## ```/\d{1,4}-\d{1,2}-\d{1,2}/g```
+   **```/\d{1,4}-\d{1,2}-\d{1,2}/g```**
 
 
 ## State Machines

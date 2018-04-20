@@ -72,10 +72,10 @@ Given an array of n numbers, design a linear running time algorithm to find the 
 a[j] - a[i], where j >= i.
 
 ```javascript
-	const maxDifference = (array) => {
-		array.sort();
-		return array[array.length - 1] - array[0];
-	}
+const maxDifference = (array) => {
+	array.sort();
+	return array[array.length - 1] - array[0];
+}
 ```
 
 Suppose that you have an n-story building and plenty of eggs. Suppose also that an egg is broken if it
