@@ -63,11 +63,10 @@
 	// sort numbers from lowest to highest
 	// subtract lowest from highest and return the difference
 
-	## const maxDifference = (array) => {
+	**const maxDifference = (array) => {
 			array.sort();
 			return array[array.length - 1] - array[0];
-		}
-	##
+		}**
 
 	// Suppose that you have an n-story building and plenty of eggs. Suppose also that an egg 
 	// is broken if is thrown off floor f or higher, and unbroken otherwise. Devise a 
