@@ -3,65 +3,65 @@
 ## Exercise 1
 
 **O(n)**
-```
-	a) a = 0;
-	   while (a < n * n * n)
-	   		a = a + n * n;
+```javascript
+a) a = 0;
+   while (a < n * n * n)
+   		a = a + n * n;
 ```
 
 **O(log n)**
-```
-	b) // input array is of length n
-	   i = array.length - 1;
-	   while (array[i] > x && i >= 0)
-	   		i = i/2;
+```javascript
+b) // input array is of length n
+  i = array.length - 1;
+  while (array[i] > x && i >= 0)
+  		i = i/2;
 ```
 
 **O(Math.sqrt(n))**
-```
-	c) sum = 0;
-	   for (i = 0; i < Math.sqrt(n) / 2; i++)
-	   		for ( j = i; j < 8 + i; j++) 
-	   			for (k = j; k < 8 + j; k++)
-	   				sum ++;
+```javascript
+c) sum = 0;
+   for (i = 0; i < Math.sqrt(n) / 2; i++)
+   		for ( j = i; j < 8 + i; j++) 
+	   		for (k = j; k < 8 + j; k++)
+	   			sum ++;
 ```
 
 
 **O(nlog(n))**
-```
-	d) sum = 0;
-	   for (i = 1; i < n; i *= 2)
-	   		for (j = 0; j < n; j++)
-	   			sum++;
+```javascript
+d) sum = 0;
+   for (i = 1; i < n; i *= 2)
+	   	for (j = 0; j < n; j++)
+	   		sum++;
 ```
 
 **O(n^3)**
-```
-	e) sum = 0;
-			for (i = 0; i < n; i++)
-				for (j = i + 1; j < n; j++)
-					for (k = j + 1; k < n; k++)
-						for (l = k + 1; l < 10 + k; l++)
-							sum++;
-```
-
-**O(n)**
-```
-	f) bunnyEars = function (bunnies) { // here bunnies === n
-			if (bunnies === 0) return 0;
-			return 2 + bunnyEars(bunnies - 1);
-		}
+```javascript
+e) sum = 0;
+   for (i = 0; i < n; i++)
+		for (j = i + 1; j < n; j++)
+			for (k = j + 1; k < n; k++)
+				for (l = k + 1; l < 10 + k; l++)
+					sum++;
 ```
 
 **O(n)**
+```javascript
+f) bunnyEars = function (bunnies) { // here bunnies === n
+	if (bunnies === 0) return 0;
+	return 2 + bunnyEars(bunnies - 1);
+}
 ```
-	g) search = function (array, arraySize, target) { // here arraySize === n
-		if (arraySize > 0) {
-			if (array[arraySize-1] === target) return true;
-			else return search(array, arraySize - 1; target);
-		}
-		return false;
-	   }
+
+**O(n)**
+```javascript
+g) search = function (array, arraySize, target) { // here arraySize === n
+   if (arraySize > 0) {
+		if (array[arraySize-1] === target) return true;
+		else return search(array, arraySize - 1; target);
+	}
+	return false;
+}
 ```
 
 
@@ -71,7 +71,7 @@
 Given an array of n numbers, design a linear running time algorithm to find the maximum value of 
 a[j] - a[i], where j >= i.
 
-```
+```javascript
 	const maxDifference = (array) => {
 		array.sort();
 		return array[array.length - 1] - array[0];
@@ -84,15 +84,16 @@ such that the number of dropped eggs is minimized.
 
 ## Exercise 3
 
-```function quicksort(array)
-		if length(array) <= 1
-			return array
-		select and remove a pivot element pivot from array
-		create empty lists less and greater
-		for each x in array
-			if x <= pivot then append x to less
-			else append x to greater
-		return concatenate(quicksort(less), list(pivot), quicksort(greater))
+```javascript
+function quicksort(array)
+	if length(array) <= 1
+		return array
+	select and remove a pivot element pivot from array
+	create empty lists less and greater
+	for each x in array
+		if x <= pivot then append x to less
+		else append x to greater
+	return concatenate(quicksort(less), list(pivot), quicksort(greater))
 ```
 
 Suppose we implement quicksort so that the pivot is always chosen to be the first element
